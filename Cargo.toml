@@ -1,0 +1,24 @@
+[package]
+name = "meme-id"
+version = "0.0.0"
+edition = "2018"
+authors = ["Zakarum <zakarumych@ya.ru>"]
+license = "MIT OR Apache-2.0"
+documentation = "https://docs.rs/meme-id"
+homepage = "https://github.com/zakarumych/meme-id"
+repository = "https://github.com/zakarumych/meme-id"
+readme = "README.md"
+description = "Map IDs to phrases and vice versa"
+categories = ["algorithms", "no-std", "value-formatting", "command-line-utilities"]
+keywords = ["human", "readable", "no-std", "id"]
+
+[[bin]]
+name = "meme-encode"
+path = "src/bin/encode.rs"
+
+[[bin]]
+name = "meme-decode"
+path = "src/bin/decode.rs"
+
+[dependencies]
+serde = { version = "1.0", optional = true }
